@@ -1,0 +1,131 @@
+.imageslider{
+  
+  background-color:  #eaeded;
+   height: 280px;
+  padding-left: 5%;
+   margin-top: 20px;
+
+}
+.bookspara{
+   font-size:40px;
+   font-weight: 500;
+   font-style: oblique;
+ color: black;
+   margin-left: 10em;
+ line-height: 30px;
+
+  
+}
+.bookspara1{
+   font-size:55px;
+   font-weight: 500;
+   font-style: italic;  
+   margin-left: 33rem; 
+   color:maroon; 
+}
+.sidepara1{
+   font-size:50px;
+   font-weight: 500;
+   font-style: italic;  
+   margin-left: 35rem; 
+   color:maroon; 
+}
+.bookspara2{
+   font-size:50px;
+   font-weight: 500;
+   font-style: italic;  
+   margin-left: 32rem; 
+   color:maroon;
+}
+.headingbooks{
+   height: 200px;
+   background-color:white;
+   width: 80%;
+   margin-left: 10%;
+   border-radius: 20px;
+
+ margin-top: 20px;
+    
+}
+.heading-right{
+   width: 30%;
+
+}
+.heading-left{
+width: 70%;
+}
+.headingclothes{
+   display: flex;
+   height: 200px;
+   width: 80%;
+   margin-left: 10%;
+   border-radius: 20px;
+ 
+   background-image: url(https://images.unsplash.com/photo-1595675024853-0f3ec9098ac7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bGFwdG9wJTIwZ2lmfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60);
+
+ margin-top: 20px;
+}
+.imagegif{
+   height: 100%;
+   width: 220px;
+}
+.clothespara2{
+   font-size:50px;
+   font-weight: 500;
+   font-style: italic;  
+   margin-left: 12rem; 
+   color:white;
+}
+.clothespara1{
+   font-size:50px;
+   font-weight: 500;
+   font-style: italic;  
+   margin-left: 9rem; 
+   color:white;
+}
+.clothespara3{
+   font-size:50px;
+   font-weight: 600;
+   font-style:unset;  
+   margin-left: 9rem; 
+   color:yellowgreen;
+   line-height: 40px;
+}
+.clothespara{
+   font-size:40px;
+   font-weight: 500;
+   font-style: italic;  
+   margin-left: 3rem; 
+   color: white;
+ 
+}
+.booksshow{
+   /* display: flex; */
+  background-color: white;
+  margin-top: 20px;
+  width: 90%;
+  margin-left: 5%;
+}
+.right-booksshow{
+   width: 15%;
+
+  height: 100%;
+}
+.center-booksshow{
+   width: 70%;
+
+   width: 100%;
+   display: grid;
+   grid-template-columns: 200px;
+   grid-template-columns: repeat(6, 1fr);
+   grid-gap: 10px;
+   box-shadow: 0vw;
+}
+.left-booksshow{
+   width: 15%;
+ 
+  height: 100%;
+}
+.databooks{
+display: grid;
+}

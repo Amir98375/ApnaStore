@@ -1,0 +1,50 @@
+
+
+.container{
+    height: 220px;
+    width: 200px;
+    box-sizing: border-box;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow:black;
+    background-color: white;
+    margin: auto;
+    
+   
+}
+.main{
+    height: 80%;
+    width: 100%;
+  
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  
+}
+.main-image{
+    height: 80%;
+    width: 100%;
+  
+  
+ 
+}
+.image-elctr{
+    float: left;
+  
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: blue;
+}
+.feature{
+   
+    text-align: center;
+  
+
+}
+.image{
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}

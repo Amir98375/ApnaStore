@@ -1,0 +1,31 @@
+.main{
+    width: 100%;
+ 
+    display: flex;
+}
+.right{
+    width: 20%;
+    border: 1px lightgray;
+    height: 100%;
+  
+}
+.left{
+    width: 80%;
+    background-color: lightgray;
+    height: 100%;
+
+
+    
+}
+.checkbox{
+    margin-left: 20px;
+
+}
+
+.filterheading{
+    font-size: 30px;
+}
+.image{
+    height: 30px;
+  width: 100%;
+}

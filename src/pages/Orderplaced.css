@@ -1,0 +1,50 @@
+/* 
+
+
+
+ */
+ #thanks{
+    font-size: 20px;
+   
+    margin-left: 33em;
+}
+.para{
+    width: 65%;
+    margin-left: 17%;
+    justify-content: baseline;
+    font-size: 18px;
+    background-color: grey;
+    color: white;
+}
+.datepara{
+    margin-left: 42em;
+}
+#thanks1{
+    font-size: 20px;
+   
+    margin-left: 30em;
+}
+.containersummary{
+    height: 60px;
+    width: 100%;
+    background-color: lightgreen;
+    display: flex;
+
+}
+.parasummary{
+    margin-left: 17em;
+    padding-top: 0.5em;
+    font-size: 25px;
+}
+.backhome{
+  
+    padding-top: 0.7em;
+    font-size: 20px;
+    margin-left: 3em;
+        
+    }
+    .imgagethanks{
+  
+        padding-top: 10px;
+       margin-left: 40rem;
+    }

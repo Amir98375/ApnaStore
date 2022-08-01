@@ -1,0 +1,110 @@
+
+.Navbar-main{
+   display: flex;
+    height: 70px;
+    width: 100%;
+  background-color: #131921;
+  
+    color: white;
+    
+}
+*Navbar-main{
+ box-sizing: border-box;
+
+
+}
+.Navbar-right{
+    width: 70%;
+    display: flex;
+    
+   
+
+}
+.Navbar-left{
+    width: 30%;
+    display: flex;
+   justify-content: space-around;
+   padding-top: 20px;
+}
+.InputSearch{
+   width: 25rem;
+   height: 40px;
+   margin-top: 15px;
+   margin-left: 40px;
+  border: none;
+  border-bottom-left-radius:10px;   
+
+  
+  color: #131921;
+  
+}
+.Logo{
+    margin-left: 100px;
+    margin-top: 24px;
+}
+.inputBox{
+    padding-bottom: 20px;
+}
+.buttonSearch{
+    background-color:#febd69;
+    border: none;
+    height: 42px;
+   margin-top: 7px;
+   border-left: 1px solid lightgrey;
+   border-bottom-right-radius: 7px;
+   border-top-right-radius: 7px;
+   cursor: pointer;
+}
+.Logo{
+cursor: pointer;
+}
+.Item-left{
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+       margin-bottom: 20px;
+}
+.Item{
+    cursor: pointer;
+    font-weight: 400;
+}
+.subsection{
+   height: 30px;
+   width: 100%;
+   background-color: #232f3e;
+   display: flex;
+   color: white;
+   cursor: pointer;
+}
+#subsection-left{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    justify-items: auto;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+    padding-top: 3px;
+
+}
+.Container{
+    background-color: grey;
+   
+}
+.subsection-elctronics{
+         /* display: none; */
+         width: 100%;
+         display: flex;
+         font-size: 17px;
+         font-weight: 200;
+       padding-left: 70px;
+        
+       cursor: pointer;
+       gap: 40px;
+      background-color:#fafafa;
+         padding-top: 2px;
+         /* margin-top: 3px; */
+         height: 30px;
+         border-bottom: 1px solid lightgray;
+}
+
