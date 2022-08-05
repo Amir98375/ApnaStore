@@ -4,13 +4,13 @@ import { useState } from "react"
 import './main.css'
 import {useNavigate} from 'react-router-dom'
 
-export const Login = ({isAuthenticate,setAuth})=>{
+export const Login = ()=>{
     const navigate=useNavigate()
     const [Name,setName] = useState(String);
     const [Mobile,setMobile] = useState(Number);
     const [cMobile,setcMobile] = useState(Number);
     const [getOtp,setGetotp] = useState("");
-
+    const [isAuthenticate,setAuth] = useState(false);
 
     const [otpEnter,setEnter] = useState(true);
     
@@ -45,14 +45,20 @@ export const Login = ({isAuthenticate,setAuth})=>{
     const handleLogin =()=>{
         let otp = sessionStorage.getItem("otp");
         if(otp-1==(+getOtp)){
-            alert(`Welcome ${Name}`);
+           
             setAuth(true);
-            navigate('/thanks')
+               if(isAuthenticate){
+                alert(`Welcome ${Name}`);
+                navigate('/thanks')
+               }
+            
         }
         else{
             alert(`otp not match`);
         }
     }
+    
+
 
     return (
         <div className="topmain">
@@ -82,9 +88,11 @@ export const Login = ({isAuthenticate,setAuth})=>{
           <br /><br />
           
             <br />
-            <input type="text" disabled={otpEnter} onChange={(e)=>setGetotp(e.target.value)}  placeholder="Enter OTP"/>
+            <input type="text" disabled={otpEnter} onChange={(e)=>setGetotp(e.target.value)} 
+             placeholder="Enter OTP"/>
             <br /><br />
-            <input type="button" disabled={otpEnter} value={"confirm otp"} onClick={handleLogin} style={{'backgroundColor':'lightskyblue'}}/>
+            <input type="button" disabled={otpEnter} value={"confirm otp"}
+             onClick={handleLogin} style={{'backgroundColor':'lightskyblue'}}/>
                 
 
                 {otploading?

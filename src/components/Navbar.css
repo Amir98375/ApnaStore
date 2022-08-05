@@ -24,17 +24,18 @@
     width: 30%;
     display: flex;
    justify-content: space-around;
-   padding-top: 20px;
+   padding-top: 19px;
 }
 .InputSearch{
    width: 25rem;
    height: 40px;
    margin-top: 15px;
    margin-left: 40px;
-  border: none;
-  border-bottom-left-radius:10px;   
-
-  
+  /* border: none; */
+   /* border: 2px solid green; */
+border-radius: 0px;
+border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
   color: #131921;
   
 }
@@ -49,7 +50,7 @@
     background-color:#febd69;
     border: none;
     height: 42px;
-   margin-top: 7px;
+   margin-top: 6px;
    border-left: 1px solid lightgrey;
    border-bottom-right-radius: 7px;
    border-top-right-radius: 7px;

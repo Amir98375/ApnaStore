@@ -36,9 +36,9 @@ export const Main = ()=>{
           for connecting with us.</p>
          </div>
          <div>
-         <p className='parasummary' id='thanks1'>Refer and get 50 for every friend</p>
+         <p className='parasummary' id='thanks1'>Refer and get Rs50 per friend</p>
          </div>
-         <Button bg={"#90ee90"} marginLeft={"38.5em"} width={"200px"}>Refer</Button>
+         <Button bg={"#90ee90"} marginLeft={"39.5em"} width={"200px"}>Refer</Button>
         </>
     )
 }

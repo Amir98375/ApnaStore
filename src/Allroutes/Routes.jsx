@@ -27,7 +27,7 @@ export const AlLRoutes=()=>{
        <>
        <Navbar/>
        <Routes>
-         
+     
         <Route path="/" element={<HomePage/>}/>
         <Route path="/allcategories" element={<Sidebar/>}/>
         <Route path="/searchcard" element={<SearchPage/>}/>
@@ -43,9 +43,10 @@ export const AlLRoutes=()=>{
         <Route path="/login" element={<SignInCard/>}/>
         <Route path="/Reset" element={<ResetPassword/>}/>
         <Route path="/otp" element={<Login/>}/>
-        <Route path="/thanks" element={<Otpsender/>}/>
-        <Route path="hairs" element={<LipsComp/>}/>
-        <Route path="brands" element={<HairsComp/>}/>
+      
+        <Route path="/hairs" element={<LipsComp/>}/>
+        <Route path="/brands" element={<HairsComp/>}/>
+        <Route path="/thanks" element={<Main/>}/>
        </Routes>
        </>
     )

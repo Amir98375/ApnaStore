@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 // import {CardPayment} from "./CardPayment";
 
 
 export const PaymentPage = () => {
-    const navigate=useNavigate()
+  const navigate=useNavigate()
+  const[price,setprice]=useState(0)
+  const cart_price=useSelector((state)=>state.cartReducer.cart)
+  console.log(cart_price)
+useEffect(()=>{
+  if(cart_price){
+    let p=0
+    for(let i=0;i<cart_price.length;i++){
+         p+=cart_price[i].price
+    }
+   let  final=Math.floor((p*90)/100)
+   setprice(final+100)
+  }
+},[])
+
   return (
     <div
       style={{
@@ -45,7 +61,7 @@ export const PaymentPage = () => {
           <p style={{ fontSize: "30px", fontWeight: "500" }}>
             Choose a payment option
           </p>
-          <p style={{ fontWeight: "500" }}>Total Payable Amount: </p>
+          <p style={{ fontWeight: "500" }}>Total Payable Amount:{price} </p>
           {/* <p style={{ fontWeight: "0" }}>Transaction Id: 100110125</p> */}
         </div>
       </div>

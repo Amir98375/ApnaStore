@@ -1,9 +1,23 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import {useNavigate} from 'react-router-dom'
+import { useSelector } from "react-redux";
 export const CardPayment = () => {
+  const [price,setprice] =useState(0)
 const navigate=useNavigate()
+const cart_price=useSelector((state)=>state.cartReducer.cart)
+console.log(cart_price)
+useEffect(()=>{
+if(cart_price){
+  let p=0
+  for(let i=0;i<cart_price.length;i++){
+       p+=cart_price[i].price
+  }
+ let  final=Math.floor((p*90)/100)
+ setprice(final+100)
+}
+},[])
   const url = "http://localhost:8080/cardpayment";
   const [data, setData] = useState({
     cardNum: "",
@@ -33,7 +47,7 @@ const navigate=useNavigate()
         tnc: data.tnc,
       })
       .then((res) => {
-        alert("payment successfuly done");
+        alert("please confrim otp to pay amount");
                 navigate(`/otp`)
         console.log(res.data);
       });
@@ -77,7 +91,7 @@ const navigate=useNavigate()
         </div>
         <div>
           <p style={{ fontSize: "30px", fontWeight: "500" }}>Enter Your Card Detail</p>
-          <p style={{ fontWeight: "500" }}>Total Payable Amount₹{cart_total}</p>
+          <p style={{ fontWeight: "500" }}>Total Payable Amount:₹{price}{cart_total}</p>
           <p style={{ fontWeight: "0" }}>Transaction Id: 100110125</p>
         </div>
       </div>

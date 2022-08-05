@@ -16,9 +16,9 @@ export const Cart = () => {
 
     const cart = useSelector((store) => store.cartReducer.cart);
 
-    const dispatch = useDispatch();
 
 
+console.log("cart",cart)
 
     let val=(+value)
    
@@ -38,7 +38,7 @@ function HandleCoupon() {
    }else {
     setTotal(final)
    }
-  
+//   console.log(final,"final")
  
 }
 
