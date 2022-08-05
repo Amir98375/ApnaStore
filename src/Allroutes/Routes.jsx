@@ -18,34 +18,75 @@ import { SignInCard } from "../pages/Signin"
 import { ResetPassword } from "../pages/Resetpassword"
 import { Main } from "../pages/OrderPlaced"
 import { Login } from "../pages/login"
-import { Otpsender } from "../pages/otpsender"
+
 import { LipsComp } from "../ProductPages/LipsComp"
 import { HairsComp } from "../ProductPages/HairsComp"
 export const AlLRoutes=()=>{
 
     return (
        <>
-       <Navbar/>
+       
        <Routes>
      
-        <Route path="/" element={<HomePage/>}/>
-        <Route path="/allcategories" element={<Sidebar/>}/>
-        <Route path="/searchcard" element={<SearchPage/>}/>
-        <Route path="/cart" element={<Cart/>}/>
-        <Route path="/payment" element={<PaymentPage/>}/>
-        <Route path="/payamount" element={<CardPayment/>}/>
-        <Route  path="/engbooks" element={<BooksEngg/>}/>
-        <Route  path="/combooks" element={<BooksComp/>}/>
-        <Route  path="/led" element={<LedPage/>}/> 
-        <Route  path="/laptop" element={<LapPage/>}/>
-        <Route  path="/mobile" element={<MobPage/>}/>
-        <Route path="/signin" element={<SignupCard/>}/>
-        <Route path="/login" element={<SignInCard/>}/>
-        <Route path="/Reset" element={<ResetPassword/>}/>
+        <Route path="/" element={
+        <>
+        <Navbar/>
+        <HomePage/>
+        </>}/>
+        <Route path="/allcategories" element={
+        <>
+        <Navbar/>
+        <Sidebar/>
+        </>
+        
+        }/>
+        <Route path="/searchcard" element={
+        <>
+          <Navbar/>
+        <SearchPage/>
+        </>
+        }/>
+        <Route path="/cart" element={
+        <>
+         <Cart/></>
+       }/>
+        <Route path="/payment" element={
+        <>
+         <PaymentPage/>
+        </>
+       }/>
+        <Route path="/payamount" element={
+        <>
+        <CardPayment/></>}/>
+        <Route  path="/engbooks" element={
+        <>
+          <Navbar/>
+        <BooksEngg/></>}/>
+        <Route  path="/combooks" element={
+        <>  <Navbar/>
+        <BooksComp/>
+        </>}/>
+        <Route  path="/led" element={
+        <>
+          <Navbar/>
+        <LedPage/></>}/> 
+        <Route  path="/laptop" element={
+            <>
+              <Navbar/>
+            <LapPage/></>
+        }/>
+        <Route  path="/mobile" element={
+        <>
+          <Navbar/><MobPage/></>}/>
+        <Route path="/signin" element={<>  <Navbar/><SignupCard/></>}/>
+        <Route path="/login" element={<>  <Navbar/><SignInCard/></>}/>
+        <Route path="/Reset" element={<>
+            <Navbar/>   <ResetPassword/></>}/>
         <Route path="/otp" element={<Login/>}/>
       
-        <Route path="/hairs" element={<LipsComp/>}/>
-        <Route path="/brands" element={<HairsComp/>}/>
+        <Route path="/hairs" element={
+        <>  <Navbar/><LipsComp/></>}/>
+        <Route path="/brands" element={<>  <Navbar/><HairsComp/></>}/>
         <Route path="/thanks" element={<Main/>}/>
        </Routes>
        </>

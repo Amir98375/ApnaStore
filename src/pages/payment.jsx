@@ -98,13 +98,13 @@ useEffect(()=>{
             </select>
           </div>
         </div>
-        <div style={{ width: "75%", margin: "auto", padding: "15px" }}>
+        <div style={{ width: "75%", margin: "auto", padding: "15px",cursor:"pointer" }}>
           <div onClick={()=>navigate('/payamount')}>
             {/* <a style={{ textDecoration: "none" }} href="card-payment"> */}
-              <h3 style={{ color: "black", marginBottom: "5px" }}>
+              <h3 style={{ color: "black", marginBottom: "5px",cursor:"pointer" }}>
                 Cards (Credit/Debit)
               </h3>
-              <p style={{ color: "gray", marginTop: "5px" }}>
+              <p style={{ color: "gray", marginTop: "5px" ,cursor:"pointer"}}>
                 Visa, Mastercard, Diners Club, Rupay, Amex
               </p>
             {/* </a> */}
@@ -117,7 +117,7 @@ useEffect(()=>{
             </p>
           </div>
           <hr style={{ border: "1px solid whitesmoke" }} />
-          <div style={{ cursor: "pointer" }}>
+          <div style={{cursor:"pointer"}}>
             <h3 style={{ color: "black", marginBottom: "5px" }}>Wallet</h3>
             <p style={{ color: "gray", marginTop: "5px" }}>
               Amazon Pay, Paytm, PhonePe & more
