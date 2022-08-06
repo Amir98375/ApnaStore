@@ -8,8 +8,7 @@ export const Main = ()=>{
   const today = date.getDate()+2;
   const currentYear = date.getFullYear()
   const currentMonth = date.getMonth() + 1
-  // console.log(currentYe
-  // console.log(currentMonth)
+
     return (
         <>
          <div className="containersummary">

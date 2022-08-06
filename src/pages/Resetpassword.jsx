@@ -12,7 +12,7 @@ import {
 import axios from 'axios';
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 
 export const ResetPassword=()=>{

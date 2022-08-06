@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { ProductElectronics } from "../components/imageelctronics"
 import { ProductShow } from "../components/ImageShow "
-import { fetchData, fetchGujData, fetchPackageData } from "../Redux/Actions"
+import { fetchGujData, fetchPackageData } from "../Redux/Actions"
 import { HomepageSlider } from "./SliderHome"
 
 export const HomePage=()=>{
@@ -15,8 +15,7 @@ export const HomePage=()=>{
 
   },[])
 
-//  console.log(elctronics,"elc")
-  // console.log(databooks)
+
     return(
         <div>
           <div className="imageslider">

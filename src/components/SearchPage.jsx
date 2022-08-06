@@ -1,13 +1,4 @@
-import {
-    Box,
-    Center,
-    useColorModeValue,
-    Heading,
-    Text,
-    Stack,
-    Button,
-    Image,
-  } from '@chakra-ui/react';
+
 
 import { useSelector ,useDispatch } from 'react-redux';
 import { ProductCard } from './ProductCard';

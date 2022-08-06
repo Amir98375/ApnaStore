@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import {
     Flex,
-    Circle,
+  
     Box,
     Image,
-    Badge,
-    useColorModeValue,
+ 
     Icon,
     Button,
     chakra,
@@ -13,14 +12,14 @@ import {
     Text,
   } from '@chakra-ui/react';
   import {AiOutlineShoppingCart} from 'react-icons/ai'
-import { useDispatch, useSelector } from 'react-redux';
-import { booksengineering } from '../Redux/BooksActions';
+import { useDispatch } from 'react-redux';
+
 import { BsStar, BsStarFill, BsStarHalf } from 'react-icons/bs';
 import { AddTocart } from '../Redux/cartActions';
-import { fetchLipsticks } from '../Redux/Beuty/Actions';
-import { useState } from 'react';
+
+
 export const ProductsBeauty = ({el}) => {
-    const [rating,setrating]=useState(3)
+
 
 // console.log(el,"eleement")
   const dispatch=useDispatch()

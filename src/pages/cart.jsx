@@ -1,13 +1,13 @@
 import { Box, Heading, Text, Stack, Image, 
     Input,useColorModeValue, Button, Radio, RadioGroup } from '@chakra-ui/react';
 import { DeleteIcon } from '@chakra-ui/icons';
-import { useDispatch, useSelector } from 'react-redux';
+
 import { Checkout } from './Checkout';
-// import { deleteProductCart } from '../Redux/products/action';
-// import { addOrder } from '../Redux/products/action';
+
 import {GrAdd,GrFormSubtract} from 'react-icons/gr'
-import {FaRupeeSign} from 'react-icons/fa'
+
 import {useState } from 'react';
+import { useSelector } from 'react-redux';
 
 export const Cart = () => {
   const [value,setvalue]=useState(0)
@@ -18,7 +18,7 @@ export const Cart = () => {
 
 
 
-console.log("cart",cart)
+
 
     let val=(+value)
    
@@ -31,7 +31,7 @@ console.log("cart",cart)
 var final=subtotal
 function HandleCoupon() {
  
-    console.log('hello')
+
     if((coupon=="Masai" && subtotal>1000) || (coupon=="masai" && subtotal>1000)){
         final=Math.floor((subtotal*90)/100)
       setTotal(final)

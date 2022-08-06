@@ -8,10 +8,9 @@ import {
     Button,
     Image,
   } from '@chakra-ui/react';
-import { useEffect } from 'react';
+
   import { BsStar, BsStarFill, BsStarHalf } from 'react-icons/bs';
-import { useDispatch, useSelector } from 'react-redux';
-import { booksengineering } from '../Redux/BooksActions';
+
 // import { useNavigate } from 'react-router';
   
 

@@ -2,7 +2,7 @@ import './Sidebar.css'
 import {ProductSimple} from '../pages/productshow'
 import InfiniteScroll from "react-infinite-scroll-component"
 import { useEffect, useState } from 'react';
-// import { useDispatch, useSelector } from 'react-redux';
+
 
 import axios from 'axios';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
@@ -10,10 +10,7 @@ import { ThreeDots } from  'react-loader-spinner'
 import { Checkbox } from '@chakra-ui/react';
 export const Sidebar=()=>{
   const [data,setdata]=useState([])
-  // const dispatch=useDispatch()
-  // const products=useSelector((state)=>state.productReducer.products)
 
-//  console.log(products)
 
 
  const getData=()=>{

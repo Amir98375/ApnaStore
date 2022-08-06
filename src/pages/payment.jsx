@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-// import {CardPayment} from "./CardPayment";
-
-
 export const PaymentPage = () => {
   const navigate=useNavigate()
   const[price,setprice]=useState(0)
