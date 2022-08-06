@@ -7,8 +7,7 @@ import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchData } from '../Redux/Actions'
-import { ProductSimple } from '../pages/productshow'
-import { SearchPage } from './SearchPage'
+
 import { getUser } from '../Redux/GetUser/Actions'
 import { Avatar, Button, Center, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Text } from '@chakra-ui/react'
 import { logout } from '../Redux/Login/Actions'
@@ -72,7 +71,7 @@ export const Navbar=()=>{
         <div className='Container'>
             <div className="Navbar-main">
                <div className="Navbar-right">
-               <div className='Logo' onClick={()=>navigate('/')}>Logo</div>
+               <div className='Logo' onClick={()=>navigate('/')}><p className='LogoF'>ApnaStore</p></div>
       
                <div className='inputBox'>
                 <input type="text" color='red' 

@@ -8,10 +8,8 @@ import {
     Button,
     Image,
   } from '@chakra-ui/react';
-  import { BsStar, BsStarFill, BsStarHalf } from 'react-icons/bs';
+
 import { useSelector ,useDispatch } from 'react-redux';
-import { fetchSingleDelhiData } from '../Redux/Actions';
-import { AddTocart } from '../Redux/cartActions';
 import { ProductCard } from './ProductCard';
 
 // import { useNavigate } from 'react-router';
@@ -22,7 +20,7 @@ import { ProductCard } from './ProductCard';
     const products = useSelector((s)=>s.productReducer.products);
     // const current=useSelector(state=>state.productReducer.currentProduct)
 const dispatch=useDispatch()
-    console.log('serch===',products);
+    // console.log('serch===',products);
 
     const handleAddcart=()=>{
          
