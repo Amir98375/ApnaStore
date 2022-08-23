@@ -21,6 +21,7 @@ import { Login } from "../pages/login"
 
 import { LipsComp } from "../ProductPages/LipsComp"
 import { HairsComp } from "../ProductPages/HairsComp"
+import Footer from "../components/footer"
 export const AlLRoutes=()=>{
 
     return (
@@ -32,11 +33,13 @@ export const AlLRoutes=()=>{
         <>
         <Navbar/>
         <HomePage/>
+        <Footer/>
         </>}/>
         <Route path="/allcategories" element={
         <>
         <Navbar/>
         <Sidebar/>
+        <Footer/>
         </>
         
         }/>
@@ -44,6 +47,7 @@ export const AlLRoutes=()=>{
         <>
           <Navbar/>
         <SearchPage/>
+        <Footer/>
         </>
         }/>
         <Route path="/cart" element={
@@ -61,32 +65,40 @@ export const AlLRoutes=()=>{
         <Route  path="/engbooks" element={
         <>
           <Navbar/>
-        <BooksEngg/></>}/>
+        <BooksEngg/>
+        <Footer/></>}/>
         <Route  path="/combooks" element={
         <>  <Navbar/>
         <BooksComp/>
+        <Footer/>
         </>}/>
         <Route  path="/led" element={
         <>
           <Navbar/>
-        <LedPage/></>}/> 
+        <LedPage/>
+        <Footer/></>}/> 
         <Route  path="/laptop" element={
             <>
               <Navbar/>
-            <LapPage/></>
+            <LapPage/>
+            <Footer/></>
         }/>
         <Route  path="/mobile" element={
         <>
-          <Navbar/><MobPage/></>}/>
-        <Route path="/signin" element={<>  <Navbar/><SignupCard/></>}/>
+          <Navbar/><MobPage/>
+          <Footer/></>}/>
+        <Route path="/signin" element={<>  <Navbar/><SignupCard/>
+        </>}/>
         <Route path="/login" element={<>  <Navbar/><SignInCard/></>}/>
         <Route path="/Reset" element={<>
             <Navbar/>   <ResetPassword/></>}/>
         <Route path="/otp" element={<Login/>}/>
       
         <Route path="/hairs" element={
-        <>  <Navbar/><LipsComp/></>}/>
-        <Route path="/brands" element={<>  <Navbar/><HairsComp/></>}/>
+        <>  <Navbar/><LipsComp/>
+         <Footer/></>}/>
+        <Route path="/brands" element={<>  <Navbar/><HairsComp/>
+        <Footer/></>}/>
         <Route path="/thanks" element={<Main/>}/>
        </Routes>
        </>

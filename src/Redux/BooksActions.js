@@ -27,7 +27,7 @@ import axios from 'axios'
  export const booksengineering=(payload)=>(dispatch)=>{
     dispatch(fetchEngineeringReq())
     console.log(payload,"fetchdata")
-    axios.get(`http://localhost:8080/engineering`,{
+    axios.get(`https://apnastore123.herokuapp.com/engineering`,{
         params:{
             ...payload
         }
@@ -66,7 +66,7 @@ return{
 export const booksComp=(payload)=>(dispatch)=>{
 dispatch(fetchCompReq())
 console.log(payload,"fetchdata")
-axios.get(`http://localhost:8080/compete`,{
+axios.get(`https://apnastore123.herokuapp.com/compete`,{
     params:{
         ...payload
     }
@@ -105,7 +105,7 @@ return{
 export const fetchmob=(payload)=>(dispatch)=>{
 dispatch(fetchmobReq())
 console.log(payload,"fetchdata")
-axios.get(`http://localhost:8080/mobile`,{
+axios.get(`https://apnastore123.herokuapp.com/mobile`,{
     params:{
         ...payload
     }
@@ -145,7 +145,7 @@ return{
 export const fetchlap=(payload)=>(dispatch)=>{
 dispatch(fetchlapReq())
 console.log(payload,"fetchdata")
-axios.get(`http://localhost:8080/laptop`,{
+axios.get(`https://apnastore123.herokuapp.com/laptop`,{
     params:{
         ...payload
     }
@@ -185,7 +185,7 @@ return{
 export const fetchled=(payload)=>(dispatch)=>{
 dispatch(fetchledReq())
 console.log(payload,"fetchdata")
-axios.get(`http://localhost:8080/headphone`,{
+axios.get(`https://apnastore123.herokuapp.com/headphone`,{
     params:{
         ...payload
     }

@@ -16,7 +16,7 @@ export const Sidebar=()=>{
  const getData=()=>{
   let limit=10
   let page=Math.ceil(data.length/limit)+1
- axios.get(`http://localhost:8080/products`,{
+ axios.get(`https://apnastore123.herokuapp.com/products`,{
   params:{
      _page:page,
      _limit:limit

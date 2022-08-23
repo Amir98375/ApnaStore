@@ -38,7 +38,7 @@ export const HomePage=()=>{
           </div>
           <div className="headingclothes">
              <div className="heading-right">
-            <p className="clothespara3">Get Upto 50% discount lucky winner</p>     </div>
+            <p className="clothespara3">Get Upto 50% discount</p>     </div>
              <div className="heading-left">
              <p className="clothespara1">Limited offers</p>
              <p className="clothespara2">Winter Sale</p>
