@@ -26,7 +26,7 @@ export const ProductsBeauty = ({el}) => {
  
   // console.log("el",el)
   const handleAddcart=()=>{
-      // console.log("hello cart")
+      
        dispatch(AddTocart(el))
   }
 

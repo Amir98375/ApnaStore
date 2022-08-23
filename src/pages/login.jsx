@@ -45,10 +45,10 @@ export const Login = ()=>{
     const handleLogin =()=>{
         let otp = sessionStorage.getItem("otp");
         if(otp-1==(+getOtp)){
-           
+            alert(`Welcome ${Name}`);
             setAuth(true);
                if(isAuthenticate){
-                alert(`Welcome ${Name}`);
+               
                 navigate('/thanks')
                }
             

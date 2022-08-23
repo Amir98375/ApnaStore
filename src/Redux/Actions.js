@@ -23,7 +23,7 @@ import axios from 'axios'
 
 export const fetchData=(payload)=>(dispatch)=>{
     dispatch(FetchDelhiRequest())
-    console.log(payload,"fetchdata")
+    // console.log(payload,"fetchdata")
     axios.get(`http://localhost:8080/products`,{
      params:{
         q:payload

@@ -3,9 +3,7 @@ import { cartReducer } from './CartReducer'
 import { productReducer } from './Reducer'
 
 export const AddTocart=(product)=>(dispatch)=>{
-    //if cart already store then use it else set it to  empty
-    // console.log(product,"productscart")
-    // console.log(cartReducer,"cartehdjb")
+    
     const cart=JSON.parse(localStorage.getItem('cart'))||[]
     
     const dupliactes=cart.filter((cartItem)=>cartItem.id===product.id)
@@ -14,7 +12,7 @@ export const AddTocart=(product)=>(dispatch)=>{
             ...product,
             count:1
         }
-        console.log(cart,"cart")
+        // console.log(cart,"cart")
         cart.push(productToAdd)
 
         localStorage.setItem('cart',JSON.stringify(cart))
