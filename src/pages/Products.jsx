@@ -40,7 +40,7 @@ export const Products = ({el}) => {
       src={el.image}
       alt={''}
       roundedTop="lg"
-      h={"300px"}
+      h={"250px"}
       width={"200px"}
     />
 

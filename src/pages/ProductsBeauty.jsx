@@ -45,8 +45,8 @@ export const ProductsBeauty = ({el}) => {
       src={el.image_url}
       alt={''}
       roundedTop="lg"
-      h={"300px"}
-      width={"300px"}
+      h={"250px"}
+      width={"200px"}
     />
 
     <Box p="6">
