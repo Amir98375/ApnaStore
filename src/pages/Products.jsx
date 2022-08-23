@@ -41,7 +41,7 @@ export const Products = ({el}) => {
       alt={''}
       roundedTop="lg"
       h={"300px"}
-      width={"300px"}
+      width={"200px"}
     />
 
     <Box p="6">

@@ -26,7 +26,7 @@ export const ProductCard = ({el}) => {
   return (
     <Center py={2}>
     <Box display={"flex"}>
-  <Box width={"20%"}>
+  <Box width={"15%"}>
     <Image src={el.image} backgroundImage={el.image} height={"100%"}></Image>
 
   </Box>
