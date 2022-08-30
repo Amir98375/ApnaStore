@@ -12,63 +12,45 @@ const initialState={
 export const productReducer=(state=initialState,action)=>{
     const {type,payload}=action;
     switch(type){
-        case types.fetch_Delhi_Request:
+        case types.fetch_AllP_Request:
         return{
               ...state,
               laoding:true,
               Error:false
         }
-        case types.fetch_Delhi_Success:
+        case types.fetch_AllP__Success:
             return{
                 ...state,
                 laoding:false,
                 products:payload,
                 Error:false
             }
-        case types.fetch_Delhi_Failure:
+        case types.fetch_AllP__Failure:
             return{
                 ...state,
                 laoding:false,
                 Error:true
             }
-            case types.fetch_Guj_Request:
+            case types.fetch_Electronics_Request:
                 return{
                     ...state,
                     laoding:true,
                     Error:false
                 }
-           case types.fetch_Guj_Success:
+           case types.fetch_Electronics_Success:
             return{
                 ...state,
                 electronicsData:payload,
                 Error:false
 
             }
-            case types.fetch_Guj_Failure:
+            case types.fetch_Electronics_Failure:
                 return{
                     ...state,
                     laoding:false,
                     Error:true
                 }
 
-              case types.fetch_Goa_Request:
-                return{
-                    ...state,
-                    laoding:true,
-                    Error:false
-                }  
-                case types.fetch_Goa_Success:
-                    return{
-                        ...state,
-                        products:payload,
-                        Error:false
-                    }
-                    case types.fetch_Goa_Failure:
-                        return{
-                            ...state,
-                            laoding:false,
-                            Error:true
-                        }
                      case types.Single_Data_Request:
                         return{
                             ...state,
@@ -89,20 +71,20 @@ export const productReducer=(state=initialState,action)=>{
                             Error:true
                     
                         }
-                      case types.fetch_Package_Request:
+                      case types.fetch_HomeBooks_Request:
                         return{
                             ...state,
                             laoding:true,
                             Error:false
                         }  
-                        case types.fetch_Package_Success:
+                        case types.fetch_HomeBooks_Success:
                             return{
                                 ...state,
                                
                                 products:payload,
                                 Error:false
                             }
-                          case types.fetch_Package_Failure:
+                          case types.fetch_HomeBooks_Success:
                             return{
                                 ...state,
                                 laoding:false,

@@ -1,18 +1,18 @@
-export const fetch_Delhi_Request='fetch_Delhi_Request';
-export const fetch_Delhi_Success='fetch_Delhi_Success';
-export const fetch_Delhi_Failure='fetch_Delhi_Failure';
+export const fetch_AllP_Request='fetch_AllP__Request';
+export const fetch_AllP__Success='fetch_AllP__Success';
+export const fetch_AllP__Failure='fetch_AllP__Failure';
 
-export const fetch_Guj_Request='fetch_Guj_Request';
-export const fetch_Guj_Success='fetch_Guj_Success';
-export const fetch_Guj_Failure='fetch_Guj_Failure';
+export const fetch_Electronics_Request='fetch_Electronics_Request';
+export const fetch_Electronics_Success='fetch_Electronics_Success';
+export const fetch_Electronics_Failure='fetch_Electronics_Failure';
 
 export const fetch_Goa_Request='fetch_Goa_Request';
 export const fetch_Goa_Success='fetch_Goa_Success';
 export const fetch_Goa_Failure='fetch_Goa_Failure';
 
-export const fetch_Package_Request='fetch_Package_Request';
-export const fetch_Package_Success='fetch_Package_Success';
-export const fetch_Package_Failure='fetch_Package_Failure';
+export const fetch_HomeBooks_Request='fetch_HomeBooks_Request';
+export const fetch_HomeBooks_Success='fetch_HomeBooks_Success';
+export const fetch_HomeBooks_Failure='fetch_HomeBooks_Failure';
 
 export const Single_Data_Request='Single_Data_Request';
 export const Single_Data_Success='Single_Data_Success';

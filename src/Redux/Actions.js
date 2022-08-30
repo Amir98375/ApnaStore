@@ -2,27 +2,27 @@ import* as types from './ActionType'
 import Axios  from 'axios'
 import axios from 'axios'
 
- const FetchDelhiRequest=(payload)=>{
+ const FetchAllpRequest=(payload)=>{
    return{
-  type:types.fetch_Delhi_Request,
+  type:types.fetch_AllP_Request,
   payload
    }
 }
- const FetchDelhiSuccess=(payload)=>{
+ const FetchAllpSuccess=(payload)=>{
     return{
-        type:types.fetch_Delhi_Success,
+        type:types.fetch_AllP__Success,
         payload
     }
 }
- const FetchDelhiFailure=(payload)=>{
+ const FetchAllpFailure=(payload)=>{
     return{
-        type:types.fetch_Delhi_Failure,
+        type:types.fetch_AllP__Failure,
         payload
     }
 }
 
 export const fetchData=(payload)=>(dispatch)=>{
-    dispatch(FetchDelhiRequest())
+    dispatch(FetchAllpRequest())
     // console.log(payload,"fetchdata")
     axios.get(`https://apnastore123.herokuapp.com/products`,{
      params:{
@@ -31,35 +31,35 @@ export const fetchData=(payload)=>(dispatch)=>{
     })
     .then((res)=>{
        
-        return dispatch(FetchDelhiSuccess(res.data))     
+        return dispatch(FetchAllpSuccess(res.data))     
     })
     .catch((e)=>{
-        return dispatch(FetchDelhiFailure(e.data))
+        return dispatch(FetchAllpFailure(e.data))
     })
 }
 
 
-const FetchPackageRequest=(payload)=>{
+const FetchHomeBooksRequest=(payload)=>{
     return{
-   type:types.fetch_Package_Request,
+   type:types.fetch_HomeBooks_Request,
    payload
     }
  }
-  const FetchPackageSuccess=(payload)=>{
+  const FetchHomeBooksSuccess=(payload)=>{
      return{
-         type:types.fetch_Package_Success,
+         type:types.fetch_HomeBooks_Success,
          payload
      }
  }
-  const FetchPackageFailure=(payload)=>{
+  const FetchHomeBooksFailure=(payload)=>{
      return{
-         type:types.fetch_Package_Failure,
+         type:types.fetch_HomeBooks_Failure,
          payload
      }
  }
  
  export const fetchPackageData=(payload)=>(dispatch)=>{
-     dispatch(FetchPackageRequest())
+     dispatch(FetchHomeBooksRequest())
     //  console.log(payload,"fetchdata")
      axios.get("https://apnastore123.herokuapp.com/homebooks",{
         params:{
@@ -67,96 +67,61 @@ const FetchPackageRequest=(payload)=>{
         }
      })
      .then((res)=>{
-         return dispatch(FetchPackageSuccess(res.data))     
+         return dispatch(FetchHomeBooksSuccess(res.data))     
      })
      .catch((e)=>{
-         return dispatch(FetchPackageFailure(e.data))
+         return dispatch(FetchHomeBooksFailure(e.data))
      })
  }
 
 
-const FetchGujRequest=(payload)=>{
+const FetchElectronicsRequest=(payload)=>{
     return{
-   type:types.fetch_Guj_Request,
+   type:types.fetch_Electronics_Request,
    payload
     }
  }
-  const FetchGujSuccess=(payload)=>{
+  const FetchElectronicsSuccess=(payload)=>{
      return{
-         type:types.fetch_Guj_Success,
+         type:types.fetch_Electronics_Success,
          payload
      }
  }
-  const FetchGujFailure=(payload)=>{
+  const FetchElectronicsFailure=(payload)=>{
      return{
-         type:types.fetch_Guj_Failure,
+         type:types.fetch_Electronics_Failure,
          payload
      }
  }
  
  export const fetchGujData=(payload)=> (dispatch)=>{
-     dispatch(FetchGujRequest)
+     dispatch(FetchElectronicsRequest)
      axios.get("https://apnastore123.herokuapp.com/productelctronics",{
         params:{
             ...payload
         }
      })
      .then((res)=>{
-         return dispatch(FetchGujSuccess(res.data))     
+         return dispatch(FetchElectronicsSuccess(res.data))     
      })
      .catch((e)=>{
-         return dispatch(FetchGujFailure(e.data))
+         return dispatch(FetchElectronicsFailure(e.data))
      })
  }
 
- const FetchGoaRequest=(payload)=>{
-    return{
-   type:types.fetch_Goa_Request,
-   payload
-    }
- }
-  const FetchGoaSuccess=(payload)=>{
-     return{
-         type:types.fetch_Goa_Success,
-         payload
-     }
- }
-  const FetchGoaFailure=(payload)=>{
-     return{
-         type:types.fetch_Goa_Failure,
-         payload
-     }
- }
- 
- export const fetchGoaData=(payload)=> (dispatch)=>{
-     dispatch(FetchGoaRequest)
-     Axios.get("/Goa",{
-        params:{
-            ...payload
-        }
-     })
-     .then((res)=>{
-         return dispatch(FetchGoaSuccess(res.data))     
-     })
-     .catch((e)=>{
-         return dispatch(FetchGoaFailure(e.data))
-     })
- }
-
-
- const FetchSingleDelhiRequest=(payload)=>{
+ const FetchSingleRequest=(payload)=>{
     return{
    type:types.Single_Data_Request,
    payload
     }
  }
-  const FetchSingleDelhiSuccess=(payload)=>{
+  const FetchSingleSuccess=(payload)=>{
      return{
          type:types.Single_Data_Success,
          payload
      }
  }
-  const FetchSingleDelhiFailure=(payload)=>{
+  const FetchSingleFailure=(payload)=>{
      return{
          type:types.Single_Data_Failure,
          payload
@@ -164,12 +129,12 @@ const FetchGujRequest=(payload)=>{
  }
  
  export const fetchSingleDelhiData=(id)=> (dispatch)=>{
-     dispatch(FetchSingleDelhiRequest())
+     dispatch(FetchSingleRequest())
      axios.get(`https://apnastore123.herokuapp.com/products/${id}`)
      .then((res)=>{
-         return dispatch(FetchSingleDelhiSuccess(res.data))     
+         return dispatch(FetchSingleSuccess(res.data))     
      })
      .catch((e)=>{
-         return dispatch(FetchSingleDelhiFailure(e.data))
+         return dispatch(FetchSingleFailure(e.data))
      })
  }

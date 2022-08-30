@@ -16,10 +16,13 @@ export const AddTocart=(product)=>(dispatch)=>{
         cart.push(productToAdd)
 
         localStorage.setItem('cart',JSON.stringify(cart))
-
+        alert("Succesuflly added to cart")
         dispatch({
             type:types.Add_Cart_Success,
             payload:cart
         })
+       
+    }else {
+        alert("Item already present in cart")
     }
 }
