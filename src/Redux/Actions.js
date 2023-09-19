@@ -24,7 +24,7 @@ import axios from 'axios'
 export const fetchData=(payload)=>(dispatch)=>{
     dispatch(FetchAllpRequest())
     // console.log(payload,"fetchdata")
-    axios.get(`https://apnastore123.herokuapp.com/products`,{
+    axios.get(`https://apna-store.onrender.com/products`,{
      params:{
         q:payload
      }
@@ -61,7 +61,7 @@ const FetchHomeBooksRequest=(payload)=>{
  export const fetchPackageData=(payload)=>(dispatch)=>{
      dispatch(FetchHomeBooksRequest())
     //  console.log(payload,"fetchdata")
-     axios.get("https://apnastore123.herokuapp.com/homebooks",{
+     axios.get("https://apna-store.onrender.com/homebooks",{
         params:{
             ...payload,  
         }
@@ -96,7 +96,7 @@ const FetchElectronicsRequest=(payload)=>{
  
  export const fetchGujData=(payload)=> (dispatch)=>{
      dispatch(FetchElectronicsRequest)
-     axios.get("https://apnastore123.herokuapp.com/productelctronics",{
+     axios.get("https://apna-store.onrender.com/productelctronics",{
         params:{
             ...payload
         }
@@ -130,7 +130,7 @@ const FetchElectronicsRequest=(payload)=>{
  
  export const fetchSingleDelhiData=(id)=> (dispatch)=>{
      dispatch(FetchSingleRequest())
-     axios.get(`https://apnastore123.herokuapp.com/products/${id}`)
+     axios.get(`https://apna-store.onrender.com//products/${id}`)
      .then((res)=>{
          return dispatch(FetchSingleSuccess(res.data))     
      })

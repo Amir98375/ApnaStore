@@ -18,7 +18,7 @@ if(cart_price){
  setprice(final+100)
 }
 },[])
-  const url = "https://apnastore123.herokuapp.com/cardpayment";
+  const url = "https://apna-store.onrender.com/cardpayment";
   const [data, setData] = useState({
     cardNum: "",
     expiryDate: "",

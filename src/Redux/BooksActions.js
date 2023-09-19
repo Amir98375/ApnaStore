@@ -27,7 +27,7 @@ import axios from 'axios'
  export const booksengineering=(payload)=>(dispatch)=>{
     dispatch(fetchEngineeringReq())
     console.log(payload,"fetchdata")
-    axios.get(`https://apnastore123.herokuapp.com/engineering`,{
+    axios.get(`https://apna-store.onrender.com/engineering`,{
         params:{
             ...payload
         }
@@ -66,7 +66,7 @@ return{
 export const booksComp=(payload)=>(dispatch)=>{
 dispatch(fetchCompReq())
 console.log(payload,"fetchdata")
-axios.get(`https://apnastore123.herokuapp.com/compete`,{
+axios.get(`https://apna-store.onrender.com/compete`,{
     params:{
         ...payload
     }
@@ -105,7 +105,7 @@ return{
 export const fetchmob=(payload)=>(dispatch)=>{
 dispatch(fetchmobReq())
 console.log(payload,"fetchdata")
-axios.get(`https://apnastore123.herokuapp.com/mobile`,{
+axios.get(`https://apna-store.onrender.com/mobile`,{
     params:{
         ...payload
     }
@@ -145,7 +145,7 @@ return{
 export const fetchlap=(payload)=>(dispatch)=>{
 dispatch(fetchlapReq())
 console.log(payload,"fetchdata")
-axios.get(`https://apnastore123.herokuapp.com/laptop`,{
+axios.get(`https://apna-store.onrender.com/laptop`,{
     params:{
         ...payload
     }
@@ -185,7 +185,7 @@ return{
 export const fetchled=(payload)=>(dispatch)=>{
 dispatch(fetchledReq())
 console.log(payload,"fetchdata")
-axios.get(`https://apnastore123.herokuapp.com/headphone`,{
+axios.get(`https://apna-store.onrender.com/headphone`,{
     params:{
         ...payload
     }
